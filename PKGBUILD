@@ -7,7 +7,7 @@ _offline="false"
 _git="false"
 pkgname=android-keys-utils
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1"
-_commit="ed64b976827f40d2faad6c90f826896a272aea0c"
+_commit="932278128bd9896f65364a21783bced2673f2f66"
 pkgrel=1
 _pkgdesc=(
   "Android hardwarke keys utilities."
@@ -67,7 +67,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
+    _sum='a947f098751a4dc16e3d0c295dd16c10afdc49b71d92c0c7cf510314cfec0da5'
   fi && \
     source+=(
       "${_tar}"
