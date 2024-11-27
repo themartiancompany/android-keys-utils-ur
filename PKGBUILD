@@ -5,12 +5,12 @@
 
 _offline="false"
 _git="false"
-pkgname=android-display-utils
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1
-_commit="cf8e1b1f476a95cfb42ba8b796a6cc6b8392e39e"
+pkgname=android-keys-utils
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1"
+_commit="ed64b976827f40d2faad6c90f826896a272aea0c"
 pkgrel=1
 _pkgdesc=(
-  "Android display utilities."
+  "Android hardwarke keys utilities."
 )
 pkgdesc="${_pkgdesc[*]}"
 arch=(
@@ -67,7 +67,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="e4a3513fea50f9c0b1e06b2f41839cf9d3a60f5d733e43643775113bda8aeade"
+    _sum='589c36f167ed7425cae3035e604b43848747bfcc53e59c5b7327a87a73fe37a9'
   fi && \
     source+=(
       "${_tar}"
