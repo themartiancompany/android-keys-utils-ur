@@ -1,11 +1,44 @@
 # SPDX-License-Identifier: AGPL-3.0
+
+#    -----------------------------------------------------
+#    Copyright © 2024, 2025, 2026  Pellegrino Prevete
 #
-# Maintainer: Truocolo <truocolo@aol.com>
-# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
+#    All rights reserved
+#    -----------------------------------------------------
+#
+#    This program is free software: you can redistribute
+#    it and/or modify it under the terms of the
+#    GNU Affero General Public License as published by
+#    the Free Software Foundation, either version 3 of
+#    the License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it
+#    will be useful, but WITHOUT ANY WARRANTY;
+#    without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#    See the GNU Affero General Public License for
+#    more details.
+#
+#    You should have received a copy of the
+#    GNU Affero General Public License
+#    along with this program.
+#    If not, see <https://www.gnu.org/licenses/>.
+
+# Maintainers:
+#   Truocolo
+#     <truocolo@aol.com>
+#     <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
+#   Pellegrino Prevete (dvorak)
+#     <pellegrinoprevete@gmail.com>
+#     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
 
 _offline="false"
 _git="false"
-pkgname=android-keys-utils
+_pkg=android-keys-utils
+pkgbase="${_pkg}"
+pkgname=(
+  "${_pkg}"
+)
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1"
 _commit="932278128bd9896f65364a21783bced2673f2f66"
 pkgrel=1
@@ -20,7 +53,7 @@ _http="https://github.com"
 _ns="themartiancompany"
 url="${_http}/${_ns}/${pkgname}"
 license=(
-  AGPL3
+  "AGPL3"
 )
 depends=(
   "bash"
@@ -38,7 +71,7 @@ optdepends=(
   optdepends+=(
   )
 makedepends=(
-  make
+  "make"
 )
 checkdepends=(
   "shellcheck"
@@ -59,7 +92,7 @@ _tarname="${pkgname}-${_tag}"
     "${_tarname}::git+${_url}#${_tag_name}=${_tag}?signed"
   ) && \
   sha256sums+=(
-    SKIP
+    'SKIP'
   )
 [[ "${_git}" == false ]] && \
   if [[ "${_tag_name}" == 'pkgver' ]]; then
